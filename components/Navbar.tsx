@@ -32,15 +32,18 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, content }) => {
   ];
 
   // Dynamic Styles based on scroll state
-  const navBackground = isScrolled || isMobileMenuOpen ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6';
-  const textColor = isScrolled || isMobileMenuOpen ? 'text-gray-700' : 'text-white';
+  // Top: Transparent bg, White Text
+  // Scrolled: White bg, Black Text
+  const navBackground = isScrolled || isMobileMenuOpen ? 'bg-white/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6';
+  const textColor = isScrolled || isMobileMenuOpen ? 'text-brand-black' : 'text-white';
   const hoverColor = isScrolled || isMobileMenuOpen ? 'hover:text-brand-orange' : 'hover:text-brand-orange';
-  const buttonBorder = isScrolled || isMobileMenuOpen ? 'border-gray-300' : 'border-white/30 text-white';
+  const buttonBorder = isScrolled || isMobileMenuOpen ? 'border-gray-300 text-brand-black' : 'border-white/30 text-white';
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBackground}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#" className="z-50">
+          {/* Pass lightMode true when NOT scrolled and NOT mobile menu */}
           <Logo lightMode={!isScrolled && !isMobileMenuOpen} />
         </a>
 
@@ -65,7 +68,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, content }) => {
 
         {/* Mobile Menu Toggle */}
         <button
-          className={`md:hidden z-50 ${isScrolled || isMobileMenuOpen ? 'text-gray-800' : 'text-white'}`}
+          className={`md:hidden z-50 ${textColor}`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}

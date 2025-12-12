@@ -9,9 +9,8 @@ export const Logo: React.FC<LogoProps> = ({ lightMode = false }) => {
     <div className="flex items-baseline select-none cursor-pointer group">
       {/* 
         Design Rationale:
-        - All Caps ensures a perfectly straight baseline (no descenders like 'y' or 'p').
-        - Mixed weights (ExtraBold + Light) creates a premium, sophisticated 'fashion/tech' aesthetic.
-        - The period adds a modern tech finish.
+        - All Caps ensures a perfectly straight baseline (removes descender of 'y').
+        - Mixed weights (ExtraBold + Light) creates a premium aesthetic.
       */}
       <span className={`text-2xl font-extrabold tracking-tight transition-colors duration-300 ${lightMode ? 'text-white' : 'text-brand-black'}`}>
         HEYO
