@@ -4,7 +4,10 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // IMPORTANT: This ensures assets are loaded relatively (e.g., "./assets/...")
-  // preventing 404 errors when deployed to GitHub Pages subdirectories.
+  // IMPORTANT: This makes sure your site works in a subfolder (like /heyoworld/)
+  // and fixes the "blank page" issue caused by absolute paths.
   base: './', 
+  build: {
+    outDir: 'dist',
+  }
 })
