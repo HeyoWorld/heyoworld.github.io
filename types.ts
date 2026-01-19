@@ -1,9 +1,9 @@
+
 export type Language = 'en' | 'zh';
 
 export interface ContentData {
   nav: {
     services: string;
-    exclusive: string;
     contact: string;
   };
   hero: {
@@ -14,19 +14,26 @@ export interface ContentData {
   services: {
     title: string;
     subtitle: string;
-    visaTitle: string;
-    visaDesc: string;
-    visaList: string[];
+    
     studyTitle: string;
     studyDesc: string;
     studyList: string[];
+    
+    tutoringTitle: string;
+    tutoringDesc: string;
+    tutoringList: string[];
+    
+    visaTitle: string;
+    visaDesc: string;
+    visaList: string[];
   };
+  // Add exclusive section to match component requirements
   exclusive: {
     tag: string;
     title: string;
     description: string;
-    features: string[];
     cta: string;
+    features: string[];
   };
   contact: {
     title: string;
@@ -35,9 +42,11 @@ export interface ContentData {
     emailPlaceholder: string;
     messagePlaceholder: string;
     sendButton: string;
+    socialTitle: string;
     note: string;
   };
   footer: {
     rights: string;
+    chineseName: string;
   };
 }

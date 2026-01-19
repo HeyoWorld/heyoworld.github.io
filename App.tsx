@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Language } from './types';
 import { CONTENT } from './constants';
@@ -9,12 +10,12 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
 function App() {
-  const [lang, setLang] = useState<Language>('zh'); // Default to Chinese as implied by user prompt language
+  const [lang, setLang] = useState<Language>('zh'); 
   
   const content = CONTENT[lang];
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 selection:bg-brand-orange selection:text-white">
+    <div className="min-h-screen bg-brand-deep text-gray-100 selection:bg-blue-500/30 selection:text-white">
       <Navbar lang={lang} setLang={setLang} content={content.nav} />
       <main>
         <Hero content={content.hero} />
