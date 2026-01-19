@@ -9,12 +9,12 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ content }) => {
   const socials = [
-    { icon: <Linkedin size={18} />, href: "#", label: "LinkedIn" },
-    { icon: <Instagram size={18} />, href: "#", label: "Instagram" },
-    { icon: <Music2 size={18} />, href: "#", label: "TikTok" },
+    { icon: <Linkedin size={18} />, href: "https://www.linkedin.com/company/heyoworld1/", label: "LinkedIn" },
+    { icon: <Instagram size={18} />, href: "https://www.instagram.com/heyoworld_edu", label: "Instagram" },
+    { icon: <Music2 size={18} />, href: "https://www.tiktok.com/@heyoworld", label: "TikTok" },
     { icon: <Globe size={18} />, href: "#", label: "Website" },
     { icon: <MessageCircle size={18} />, href: "#", label: "WeChat" },
-    { icon: <Phone size={18} />, href: "#", label: "WhatsApp" },
+    { icon: <Phone size={18} />, href: "https://wa.me/message/BYHIZLU4EWPBD1", label: "WhatsApp" },
   ];
 
   return (
@@ -35,6 +35,8 @@ export const Footer: React.FC<FooterProps> = ({ content }) => {
                   <a 
                     key={idx} 
                     href={social.href} 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white hover:bg-blue-600 hover:text-white transition-all duration-500 shadow-xl border border-white/5"
                     aria-label={social.label}
                   >
