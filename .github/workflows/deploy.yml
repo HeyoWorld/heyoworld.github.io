@@ -32,6 +32,9 @@ jobs:
       
       - name: Build
         run: npm run build
+
+      - name: Create .nojekyll to fix MIME type issues
+        run: touch dist/.nojekyll
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
