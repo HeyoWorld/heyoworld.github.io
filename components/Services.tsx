@@ -15,7 +15,8 @@ export const Services: React.FC<ServicesProps> = ({ content }) => {
       desc: content.studyDesc,
       list: content.studyList,
       icon: ICONS.study,
-      image: "https://images.unsplash.com/photo-1541339907198-e08756ebafe1?q=80&w=2670&auto=format&fit=crop",
+      // Updated to a reliable Oxford/Cambridge style architecture image
+      image: "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=2500&auto=format&fit=crop",
       align: "left",
       tag: "Academic Growth"
     },
