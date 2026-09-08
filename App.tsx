@@ -1,31 +1,43 @@
-
-import React, { useState } from 'react';
-import { Language } from './types';
-import { CONTENT } from './constants';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { Services } from './components/Services';
-import { Exclusive } from './components/Exclusive';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
-
-function App() {
-  const [lang, setLang] = useState<Language>('zh'); 
-  
+import React, { useEffect, useState } from "react";
+import { Language } from "./types";
+import { CONTENT } from "./constants";
+import { Navbar } from "./components/Navbar";
+import { Hero } from "./components/Hero";
+import { Services } from "./components/Services";
+import { Exclusive } from "./components/Exclusive";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
+import "./styles.css";
+export default function App() {
+  const [lang, setLang] = useState<Language>("zh");
   const content = CONTENT[lang];
-
+  useEffect(() => {
+    document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+    document.title =
+      lang === "zh"
+        ? "和曜 Heyoworld | 英国升学、学术辅导与留学准备"
+        : "Heyoworld | UK applications & academic support";
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute("content", content.hero.subtitle);
+  }, [lang, content]);
   return (
-    <div className="min-h-screen bg-brand-deep text-gray-100 selection:bg-blue-500/30 selection:text-white">
+    <div id="top">
+      <a className="skip-link" href="#main">
+        {content.nav.skip}
+      </a>
       <Navbar lang={lang} setLang={setLang} content={content.nav} />
-      <main>
+      <main id="main">
         <Hero content={content.hero} />
         <Services content={content.services} />
-        <Exclusive content={content.exclusive} />
-        <Contact content={content.contact} />
+        <Exclusive content={content.approach} />
+        <Contact
+          content={content.contact}
+          services={content.services.items}
+          lang={lang}
+        />
       </main>
       <Footer content={content.footer} />
     </div>
   );
 }
-
-export default App;

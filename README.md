@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Heyoworld / 和曜
 
-# Run and deploy your AI Studio app
+Bilingual UK education consultation website, built with the existing React + Vite setup and deployed to GitHub Pages. No site backend, external font downloads, or runtime CSS framework is required.
 
-This contains everything you need to run your app locally.
+## Development
 
-View your app in AI Studio: https://ai.studio/apps/drive/1XsEo60T6YSCDn1PiF8zp5QwFHrulBQnJ
+- `npm ci`
+- `npm run dev`
+- `npm run build` — creates `dist/`, including the custom domain and SVG logo.
+- `node --test tests/form.test.mjs` — form contract tests, using Node 22.18+ (or Node 24+).
 
-## Run Locally
+Pushes to `main` run the existing GitHub Pages deployment. `public/CNAME` preserves `heyoworld.com` in the published output.
 
-**Prerequisites:**  Node.js
+## Consultation email setup
 
+Forms are posted to `https://formsubmit.co/ajax/hello@heyoworld.com` using FormSubmit. Client email is included as `email` so replies can be addressed to the client. Names, inquiry details, selected service and language are included. The UI only shows submission success after both an HTTP success and an explicit provider success response; failures retain the form entries. Requests time out after 15 seconds and duplicate submissions are blocked while pending.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+**Owner activation is required.** A setup request was sent on 2026-09-08. FormSubmit returned “This form needs Activation” and reported sending its verification email to hello@heyoworld.com. Open that email and click **Activate Form**. After activation, submit a clearly labelled test inquiry and confirm receipt in that mailbox. Until this happens, end-to-end email delivery is not verified. Check spam folders if the activation email is not visible.
+
+The direct email link remains available. No SMTP passwords or private API credentials belong in this public repository. Do not replace provider failures with simulated success.
+
+Provider documentation: https://formsubmit.co/documentation
+
+## Brand and content
+
+Public-facing Chinese brand: **和曜**. The existing company name, HEYO WORLD CO., LTD., is retained. This is a website brand update, not a registered legal-name change.
+
+`public/logo.svg` is the compact vector H mark, used in the header, footer and favicon. The ascending crossbar suggests connection and a next step; the small lime accent gives the mark a recognizable detail at small sizes. The library image reuses an existing site image from Unsplash at a reduced requested size.
+
+Content is maintained in `constants.tsx`; styles in `styles.css`. Both languages are updated together. Social feed and social links have been removed.

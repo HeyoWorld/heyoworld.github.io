@@ -1,52 +1,52 @@
-
-export type Language = 'en' | 'zh';
-
+export type Language = "zh" | "en";
 export interface ContentData {
   nav: {
     services: string;
+    approach: string;
     contact: string;
+    skip: string;
+    language: string;
   };
   hero: {
-    title: string;
+    eyebrow: string;
+    title: string[];
     subtitle: string;
     cta: string;
+    caption: string;
+    footnote: string;
   };
   services: {
+    label: string;
     title: string;
-    subtitle: string;
-    
-    studyTitle: string;
-    studyDesc: string;
-    studyList: string[];
-    
-    tutoringTitle: string;
-    tutoringDesc: string;
-    tutoringList: string[];
-    
-    visaTitle: string;
-    visaDesc: string;
-    visaList: string[];
+    intro: string;
+    items: { title: string; en: string; description: string; list: string[] }[];
   };
-  // Add exclusive section to match component requirements
-  exclusive: {
-    tag: string;
+  approach: {
+    label: string;
     title: string;
     description: string;
-    cta: string;
-    features: string[];
+    steps: { title: string; description: string }[];
   };
   contact: {
+    label: string;
     title: string;
     subtitle: string;
-    namePlaceholder: string;
-    emailPlaceholder: string;
-    messagePlaceholder: string;
-    sendButton: string;
-    socialTitle: string;
+    name: string;
+    email: string;
+    service: string;
+    choose: string;
+    message: string;
+    placeholder: string;
+    submit: string;
+    submitting: string;
     note: string;
+    privacy: string;
+    success: string;
+    successNote: string;
+    error: string;
+    again: string;
+    direct: string;
+    required: string;
   };
-  footer: {
-    rights: string;
-    chineseName: string;
-  };
+  footer: { description: string; rights: string; top: string };
 }
