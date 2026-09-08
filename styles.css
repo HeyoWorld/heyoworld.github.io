@@ -855,3 +855,9 @@ fieldset:disabled {
 @media(max-width:380px) { .brand .brand-symbol { width: 28px; height: 28px; } .brand .brand-lettering { width: 113px; height: 23px; } .header-inner { gap: 8px; } }
 
 @media(max-width:760px){.header-inner nav{gap:10px}}
+/* Wordmark-first identity: the orbital o is the symbol. */
+.brand .brand-lettering { width: 192px; height: 40px; }
+.brand-word { gap: 23px; }
+.brand-cn { padding-left: 23px; }
+@media(max-width:760px) { .brand .brand-lettering { width: 166px; height: 35px; } }
+@media(max-width:380px) { .brand .brand-lettering { width: 142px; height: 30px; } }

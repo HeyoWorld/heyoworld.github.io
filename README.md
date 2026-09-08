@@ -1,4 +1,4 @@
-# Heyoworld / 知游
+# Heyoworld / 海柚
 
 Bilingual UK education consultation website, built with the existing React + Vite setup and deployed to GitHub Pages. No site backend, external font downloads, or runtime CSS framework is required.
 
@@ -23,8 +23,12 @@ Provider documentation: https://formsubmit.co/documentation
 
 ## Brand and content
 
-Public-facing Chinese brand: **知游**. The existing company name, HEYO WORLD CO., LTD., is retained. This is a website brand update, not a registered legal-name change.
+Public-facing Chinese brand: **海柚**. The existing company name, HEYO WORLD CO., LTD., is retained. This is a website brand update, not a registered legal-name change.
 
-`public/logo.svg` is the unboxed, forward-slanted H symbol. `public/wordmark.svg` is custom vector lettering with consistent curves, stroke weights and optical spacing; it requires no font download. The Chinese brand 知游 connects learning with exploration. The library image reuses an existing site image from Unsplash at a reduced requested size.
+The primary logo is `public/wordmark.svg`: custom lowercase lettering with an orbital blue “o” integrated into Heyoworld. `public/logo.svg` isolates that symbol for the favicon. There is no separate icon before the header wordmark. Both are small SVG assets and require no font downloads. The Chinese name 海柚 keeps the sound of Heyo with a lighter, more approachable character. The library image reuses an existing site image from Unsplash at a reduced requested size.
+
+Design references studied for principles of reduction and consistency between symbol and lettering (no source brand assets are included):
+- https://www.pentagram.com/work/mastercard
+- https://www.pentagram.com/work/covariant
 
 Content is maintained in `constants.tsx`; styles in `styles.css`. Both languages are updated together. Social feed and social links have been removed.

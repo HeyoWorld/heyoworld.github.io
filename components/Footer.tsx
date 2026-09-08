@@ -4,7 +4,7 @@ import { Logo } from "./Logo";
 export const Footer = ({ content }: { content: ContentData["footer"] }) => (
   <footer className="container footer">
     <div className="footer-main">
-      <a href="#top" aria-label="Heyoworld 知游">
+      <a href="#top" aria-label="Heyoworld 海柚">
         <Logo />
       </a>
       <p>{content.description}</p>
@@ -16,7 +16,7 @@ export const Footer = ({ content }: { content: ContentData["footer"] }) => (
       <span>
         © {new Date().getFullYear()} HEYO WORLD CO., LTD. {content.rights}
       </span>
-      <span>知游 HEYOWORLD</span>
+      <span>海柚 HEYOWORLD</span>
     </div>
   </footer>
 );

@@ -9,10 +9,10 @@ export const CONTENT: Record<Language, ContentData> = {
       language: "Switch to English",
     },
     hero: {
-      eyebrow: "HEYO WORLD · 知游",
+      eyebrow: "HEYO WORLD · 海柚",
       title: ["走向世界，", "从适合你的", "下一步开始。"],
       subtitle:
-        "专注英国升学、学术辅导与留学准备。知游以你的兴趣与目标为起点，让每一步选择更有方向。",
+        "专注英国升学、学术辅导与留学准备。海柚以你的兴趣与目标为起点，让每一步选择更有方向。",
       cta: "开启咨询",
       caption: "以求知之心，探索更广阔的世界。",
       footnote: "以你的目标与当前阶段为起点",
@@ -119,7 +119,7 @@ export const CONTENT: Record<Language, ContentData> = {
       language: "切换到中文",
     },
     hero: {
-      eyebrow: "HEYO WORLD · 知游",
+      eyebrow: "HEYO WORLD · 海柚",
       title: ["A wider world.", "A next step", "that fits you."],
       subtitle:
         "UK university applications, academic support and study abroad preparation. We help you make sense of your options and build a practical plan.",

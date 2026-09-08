@@ -15,7 +15,7 @@ export default function App() {
     document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
     document.title =
       lang === "zh"
-        ? "知游 Heyoworld | 英国升学、学术辅导与留学准备"
+        ? "海柚 Heyoworld | 英国升学、学术辅导与留学准备"
         : "Heyoworld | UK applications & academic support";
     document
       .querySelector('meta[name="description"]')
