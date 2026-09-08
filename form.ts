@@ -21,7 +21,7 @@ export async function submitInquiry(
         service: String(data.get("service") || "Not specified"),
         message: String(data.get("message") || "").trim(),
         language,
-        _subject: "Heyoworld 和曜 | 新的官网咨询",
+        _subject: "Heyoworld 知游 | 新的官网咨询",
         _template: "table",
         _honey: String(data.get("_honey") || ""),
       }),

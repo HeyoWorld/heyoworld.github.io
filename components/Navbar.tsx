@@ -12,7 +12,7 @@ export const Navbar = ({
 }) => (
   <header className="site-header">
     <div className="container header-inner">
-      <a href="#top" aria-label="Heyoworld 和曜">
+      <a href="#top" aria-label="Heyoworld 知游">
         <Logo />
       </a>
       <nav aria-label={lang === "zh" ? "主导航" : "Main navigation"}>

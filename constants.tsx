@@ -2,31 +2,31 @@ import { ContentData, Language } from "./types";
 export const CONTENT: Record<Language, ContentData> = {
   zh: {
     nav: {
-      services: "我们能做什么",
-      approach: "如何合作",
+      services: "服务领域",
+      approach: "合作方式",
       contact: "开启咨询",
       skip: "跳转到主要内容",
       language: "Switch to English",
     },
     hero: {
-      eyebrow: "HEYO WORLD · 和曜",
+      eyebrow: "HEYO WORLD · 知游",
       title: ["走向世界，", "从适合你的", "下一步开始。"],
       subtitle:
-        "英国升学、学科辅导与留学准备。和曜与你一起梳理选择，把想法变成具体、可执行的计划。",
+        "专注英国升学、学术辅导与留学准备。知游以你的兴趣与目标为起点，让每一步选择更有方向。",
       cta: "开启咨询",
-      caption: "保持好奇，也走得踏实。",
+      caption: "以求知之心，探索更广阔的世界。",
       footnote: "以你的目标与当前阶段为起点",
     },
     services: {
-      label: "01 / 我们能做什么",
-      title: "把复杂的选择，\n一件件理清楚。",
-      intro: "从申请前的准备，到学习中的具体问题，找到你现在需要的支持。",
+      label: "01 / 服务领域",
+      title: "让每一份潜力，\n有清晰的发展方向。",
+      intro: "围绕升学目标、学术成长与海外学习准备，提供契合不同阶段的规划与支持。",
       items: [
         {
           title: "英国升学规划",
           en: "UNIVERSITY APPLICATIONS",
           description:
-            "结合兴趣、成绩和时间安排，讨论适合的院校与专业，逐步推进申请准备。",
+            "综合学术背景、个人兴趣与发展目标，明确院校及专业选择，有序推进申请准备。",
           list: [
             "院校与专业选择",
             "申请时间线与材料梳理",
@@ -37,7 +37,7 @@ export const CONTENT: Record<Language, ContentData> = {
           title: "学科与学术辅导",
           en: "ACADEMIC SUPPORT",
           description:
-            "围绕正在学习的课程和遇到的难点，安排有针对性的辅导与练习。",
+            "立足课程要求与个人学习特点，通过针对性的辅导与练习，深化理解，完善学习方法。",
           list: [
             "GCSE / A-Level / IB 课程辅导",
             "学术英语与写作练习",
@@ -48,34 +48,34 @@ export const CONTENT: Record<Language, ContentData> = {
           title: "留学与行前准备",
           en: "STUDY ABROAD PREPARATION",
           description:
-            "整理留学所需的信息、材料和待办事项，让行前准备更有条理。",
+            "衔接申请与入学，梳理行前材料与关键事项，为适应海外学习与生活做好准备。",
           list: [
             "签证申请流程与材料信息整理",
             "行前事项与到校准备",
-            "需要时协助寻找合适的专业支持",
+            "按需协助对接相关专业支持",
           ],
         },
       ],
     },
     approach: {
-      label: "02 / 如何合作",
-      title: "先听你的想法，\n再讨论怎么走。",
+      label: "02 / 合作方式",
+      title: "理解你的起点，\n规划适合的路径。",
       description:
-        "我们重视清楚的沟通、实际的安排，以及每个阶段你真正需要的帮助。",
+        "以充分沟通建立理解，以明确计划推进合作。让每一阶段的支持，都回应你的实际需求。",
       steps: [
         {
-          title: "聊聊当前情况",
+          title: "了解背景与目标",
           description:
-            "告诉我们你的学习阶段、目标和正在纠结的问题。暂时没有完整计划也没关系。",
+            "从学习经历、个人兴趣与未来期待出发，识别当前需求，明确值得深入探索的方向。",
         },
         {
-          title: "明确支持范围",
+          title: "明确方案与安排",
           description:
-            "一起讨论可以提供的帮助、时间安排和费用，再决定是否开始。",
+            "围绕目标商定服务范围、时间节点与费用安排，在充分了解后作出合作决定。",
         },
         {
-          title: "按计划往前走",
-          description: "把准备工作拆成具体步骤，结合进展和反馈及时调整。",
+          title: "持续跟进与调整",
+          description: "将规划落实为阶段任务，结合学习进展与沟通反馈，适时调整后续安排。",
         },
       ],
     },
@@ -83,12 +83,12 @@ export const CONTENT: Record<Language, ContentData> = {
       label: "03 / LET’S TALK",
       title: "开启咨询",
       subtitle:
-        "从一个问题开始就好。留下你的情况与联系方式，我们会通过邮件与你联系。",
-      name: "怎么称呼你",
+        "欢迎分享你的学习背景与咨询需求。留下联系方式，我们将通过邮件与你进一步沟通。",
+      name: "你的姓名",
       email: "电子邮箱",
       service: "想了解的方向",
       choose: "请选择（可选）",
-      message: "你想聊些什么",
+      message: "咨询内容",
       placeholder:
         "例如：目前的学习阶段、感兴趣的专业、计划入学时间，或正在遇到的问题。",
       submit: "提交咨询",
@@ -119,7 +119,7 @@ export const CONTENT: Record<Language, ContentData> = {
       language: "切换到中文",
     },
     hero: {
-      eyebrow: "HEYO WORLD · 和曜",
+      eyebrow: "HEYO WORLD · 知游",
       title: ["A wider world.", "A next step", "that fits you."],
       subtitle:
         "UK university applications, academic support and study abroad preparation. We help you make sense of your options and build a practical plan.",
@@ -129,7 +129,7 @@ export const CONTENT: Record<Language, ContentData> = {
     },
     services: {
       label: "01 / WHAT WE DO",
-      title: "Make room\nfor a clearer plan.",
+      title: "Individual potential.\nA considered direction.",
       intro:
         "From preparing an application to working through a difficult subject, find support for the stage you are at.",
       items: [
@@ -170,22 +170,22 @@ export const CONTENT: Record<Language, ContentData> = {
     },
     approach: {
       label: "02 / OUR APPROACH",
-      title: "Your story first.\nThe next steps, together.",
+      title: "Understand the individual.\nShape the path ahead.",
       description:
-        "Clear conversations, practical arrangements and support that reflects what you need at each stage.",
+        "A thoughtful approach begins with understanding. Clear plans and ongoing dialogue keep our support aligned with your needs.",
       steps: [
         {
-          title: "Tell us where you are",
+          title: "Understand your background",
           description:
             "Share your current studies, goals and questions. You do not need to have everything figured out.",
         },
         {
-          title: "Agree on the support",
+          title: "Define the plan together",
           description:
             "We discuss the scope, timing and fees together before you decide whether to begin.",
         },
         {
-          title: "Take it step by step",
+          title: "Review and refine",
           description:
             "Break the work into clear tasks and adjust the plan as you progress and give feedback.",
         },

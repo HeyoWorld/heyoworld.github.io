@@ -844,3 +844,14 @@ fieldset:disabled {
     max-width: 90px;
   }
 }
+
+/* Optically aligned vector brand lettering; no font download required. */
+.brand { gap: 10px; }
+.brand-symbol { flex: none; width: 40px; height: 40px; }
+.brand-word { display: flex; align-items: center; gap: 20px; }
+.brand-lettering { display: block; width: 164px; height: 33px; }
+.brand-cn { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", sans-serif; font-weight: 400; font-size: 16px; letter-spacing: .16em; padding-left: 20px; line-height: 1.25; }
+@media(max-width:760px) { .brand .brand-symbol { width: 34px; height: 34px; } .brand .brand-lettering { width: 126px; height: 26px; } .brand { gap: 6px; } }
+@media(max-width:380px) { .brand .brand-symbol { width: 28px; height: 28px; } .brand .brand-lettering { width: 113px; height: 23px; } .header-inner { gap: 8px; } }
+
+@media(max-width:760px){.header-inner nav{gap:10px}}

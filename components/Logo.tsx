@@ -1,9 +1,10 @@
 import React from "react";
 export const Logo = () => (
   <span className="brand">
-    <img src="./logo.svg" alt="" width="42" height="42" />
+    <img className="brand-symbol" src="./logo.svg" alt="" width="40" height="40" />
     <span className="brand-word">
-      heyoworld<span className="brand-cn">和曜</span>
+      <img className="brand-lettering" src="./wordmark.svg" alt="heyoworld" width="164" height="33" />
+      <span className="brand-cn">知游</span>
     </span>
   </span>
 );

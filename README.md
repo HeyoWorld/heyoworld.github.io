@@ -1,4 +1,4 @@
-# Heyoworld / 和曜
+# Heyoworld / 知游
 
 Bilingual UK education consultation website, built with the existing React + Vite setup and deployed to GitHub Pages. No site backend, external font downloads, or runtime CSS framework is required.
 
@@ -23,8 +23,8 @@ Provider documentation: https://formsubmit.co/documentation
 
 ## Brand and content
 
-Public-facing Chinese brand: **和曜**. The existing company name, HEYO WORLD CO., LTD., is retained. This is a website brand update, not a registered legal-name change.
+Public-facing Chinese brand: **知游**. The existing company name, HEYO WORLD CO., LTD., is retained. This is a website brand update, not a registered legal-name change.
 
-`public/logo.svg` is the compact vector H mark, used in the header, footer and favicon. The ascending crossbar suggests connection and a next step; the small lime accent gives the mark a recognizable detail at small sizes. The library image reuses an existing site image from Unsplash at a reduced requested size.
+`public/logo.svg` is the unboxed, forward-slanted H symbol. `public/wordmark.svg` is custom vector lettering with consistent curves, stroke weights and optical spacing; it requires no font download. The Chinese brand 知游 connects learning with exploration. The library image reuses an existing site image from Unsplash at a reduced requested size.
 
 Content is maintained in `constants.tsx`; styles in `styles.css`. Both languages are updated together. Social feed and social links have been removed.
